@@ -5,13 +5,14 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import "./GoogleSearch.css";
 import { SearchContext } from "./SearchContext";
 import { useNavigate } from "react-router-dom";
-import { API_KEY, SEARCH_KEY } from "./constant";
 
 const GoogleSearch = () => {
   const [searchData, setSearchData] = useState();
+  const apiKey = process.env.REACT_APP_API_KEY
+  const contextKey = process.env.REACT_APP_SEARCH_KEY
   const navigate = useNavigate();
   const { term, setTerm } = useContext(SearchContext);
-  const url = `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${SEARCH_KEY}&q=${term}`;
+  const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${contextKey}&q=${term}`;
   const handleLogo = () => {
     navigate("/");
   };
