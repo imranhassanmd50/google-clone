@@ -1,0 +1,68 @@
+.search-header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    padding: 20px;
+    /* margin-top: 10px; */
+    align-items: center;
+    gap: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+    transition: box-shadow 0.3s ease, border-bottom 0.3s ease;
+    /* border-bottom: 1px solid gray; */
+}
+
+
+#google-logo{
+    width: 92;
+    height: 30px;
+}
+.search-items{
+    /* width: 300px; */
+    height: 50px;
+}
+
+.search-results{
+    text-align: left;
+    max-width: 650px;
+    margin-top: 10px;
+    margin-left: 240px;
+    margin-bottom: 50px;
+}
+.search-image{
+    object-fit: cover;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+.search-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+.search-title{
+    /* font-size: 25px; */
+    margin-top: 5px;
+    text-decoration: none;
+}
+.search-title:hover{
+    /* font-size: 25px; */
+    text-decoration: underline;
+}
+.tags-container{
+    margin-top: 80px;
+    display: flex;
+    margin-left: 200px;
+    /* justify-content: start; */
+    gap: 20px;
+}
